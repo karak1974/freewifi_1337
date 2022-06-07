@@ -15,6 +15,7 @@ chmod +x freewifi.sh
 ./freewifi.sh
 ```
 If you want this to run at boot, just run the next lines.
+Make sure `/mnt/freewifi` is a writeable folder, or change the *file* variable in the setup.
 ```
 cp freewifi.sh /etc/init.d/
 chmod +x /etc/init.d/freewifi.sh
