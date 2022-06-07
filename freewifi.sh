@@ -9,6 +9,7 @@ then
     echo 0 > $file
 fi
 count=$(cat $file)
+uci set wireless.default_radio0.ssid='Freewifi_$count'
 
 uci set wireless.radio0.disabled='0'
 uci set wireless.default_radio0.ssid='Freewifi_0'
